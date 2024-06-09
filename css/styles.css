@@ -1,0 +1,142 @@
+/* if the font is linked as local: */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Roboto-Bold.ttf) format('typetrue');
+}
+
+:root {
+  /* Fonts (primary, secondary, accent, font, dark, light-cl*/
+  /* Colors */
+  /* Others */
+  --brand-color: 155, 6, 255;
+  /* all other colors has to be here as well */
+  --size: left;
+  line-hight: 1.23;
+}
+
+html {
+  font-size: 5px;
+  color: rgba(var(--brand-color), 1);
+}
+
+/* Base styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  font-weight: 700;
+  /* color: darkcyan; */
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tahoma';
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  /* list-style-type: simp-chinese-formal; */
+}
+
+h1:focus {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+button {
+  color: inherit;
+  /* background-color: currentColor; */
+}
+
+main {
+  /* text-align: justify; */
+  font-size: 16px;
+  line-height: 1.5; /* using multiplier (in this case 1.5) is the best bet */
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-shadow: 1px 1px 1px lightseagreen, 2px 2px 2px red;
+}
+
+p {
+  text-indent: 30px;
+  text-align: var(--size);
+  word-spacing: 0.1em;
+}
+
+.alert {
+}
+.success {
+}
+/* #region Common Styles */
+/* Common styles */
+/* logo */
+/* socials */
+/* #endregion Common Styles*/
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
+ul + button {
+  color: indianred;
+}
+
+ul + p {
+  background-color: mediumspringgreen;
+}
+
+button:hover,
+button:focus {
+  background-color: chartreuse;
+}
+
+/* active mostly is used on the smartphones */
+button:active {
+  color: tomato;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.image-width img {
+  width: 300px;
+}
